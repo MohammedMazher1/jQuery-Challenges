@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="fontawesome-free-6.4.2-web/css/all.min.css" />
+    <link rel="stylesheet" href="Bootstrap/bootstrap.css" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      div {
+        border: 2px solid blue;
+        margin: 10px;
+        opacity: 0.5;
+        padding: 5px;
+
+      }
+      div * {
+        border: 2px solid blue;
+        display: block;
+        margin: 10px;
+        padding: 5px;
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      div
+      <h1 style="padding: 10px;">h1</h1>
+      <h2>h2</h2>
+      <h3>h3</h3>
+      <h4>h4</h4>
+      <h5>h5</h5>
+      <h6>h6</h6>
+      <p>p</p>
+      <p>p</p>
+      <span>span</span>
+      <ul>
+        ul
+        <li>li</li>
+        <li>li</li>
+        <li>li</li>
+      </ul>
+    </div>
+    <script src="assets/jquery-3.7.1.js"></script>
+    <!-- <script src="Bootstrap/bootstrap.js"></script> -->
+    <script>
+      $(function () {
+        let first = $('li').eq(0);
+        $('li').not(first).css('border-color','red');
+      });
+
+      //   $("#likeBox").click(function () {
+      //     $(this).addClass("animation1");
+      //     $("#likeBox > .text").empty();
+      //     $("i").removeClass("fa-regular");
+      //     $("i").css("transition", "all 1s");
+      //     $("i").addClass("fa fa-heart");
+      //     $("#badg").addClass("cardAnimation");
+      //     setTimeout(() => {
+      //       $("#likeBox > .text").html("like 30");
+      //       $('#shoppingItem').html('1');
+      //       $('.fa-shopping-cart').addClass('shopAnim');
+      //       $('.fa-shopping-cart').addClass('shopAnim');
+
+      //       $("#likeBox > .text").css({
+      //         transition: "all 0.3s",
+      //       });
+      //     }, 1500);
+      //   });
+
+      // $(document).ready(function(){
+      //     $('h1:first-child').hide();
+      // });
+      // $('button').click(()=>{
+      //     // alert($('h1').html())
+      //     $('p').html($('h1:last-of-type').html());
+      //     $('input').val('this is input');
+
+      //     $('h1:first-of-type').addClass('yellow')
+      // });
+
+      // $('button').click(()=>{
+      //     // alert($('h1').html())
+      //     $('p').html($('h1:last-of-type').html());
+      //     $('input').val('this is input');
+      //     $('h1:first-of-type').before('<h6>Ali</h6>');
+      //     $('h1:first-of-type').after('<h6>Mohammed</h6>');
+      //     $('h1:first-of-type').append(']');
+      //     $('h1:first-of-type').prepend('[');
+      //     $('div').remove(); // remove all container with his childern
+      //     $('div').empty(); // remove the content of the element
+      // });
+
+      // $('button:first-of-type').click(function(){
+      //     $('.box').hide(1000,()=>{
+      //         confirm('show me');
+      //     })
+      // });
+      // $('button:last-of-type').click(function(){
+      //     $('h1:first-child').slideDown();
+      // });
+    </script>
+  </body>
+</html>
